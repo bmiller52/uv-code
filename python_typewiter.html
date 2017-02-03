@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ultraviolet Code</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Ultraviolet Code</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="html-css.html">HTML/CSS</a></li>
+						<li><a href="python.html">Python</a></li>
+						<li><a href="javascript.html">Coming Soon: Javascript</a></li>
+						<li><a href="php.html">Coming Soon: PHP</a></li>
+					</ul>
+					<ul class="actions vertical">
+						<li><a href="landing.html" class="button special fit">Recent Posts</a></li>
+						<li><a href="authors.html" class="button fit">Authors</a></li>
+					</ul>
+				</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic13.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Python: Typewriter Effect</h1>
+							</header>
+							<div class="content">
+								<p>Learn how to use the typewriter effect in Python and what requirements goes along with<br> it. We will go in-depth with what code you need and why it works.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>The Code</h2>
+									</header>
+									<p>I'll just start off with giving you the code, then explain why this works and what else you can do with it.</p>
+									<p class="code-display">from random import uniform<br>
+										from time import sleep<br>
+										import sys<br>
+										<br>
+										example = 'This is just a test so you can see how this trick works. Pretty cool huh?'<br>
+										<br>
+										for x in example:<br>
+										&nbsp;&nbsp;print(x, end = '')<br>
+										&nbsp;&nbsp;sys.stdout.flush()<br>
+										&nbsp;&nbsp;sleep(uniform(0.01, .3))<br>
+										<br>
+										print(' ')<br>
+									</p>
+									<h2>Requirements</h2>
+									<p>Python 3 or higher</p>
+									<h2>Why this works</h2>
+									<p>In the first 3 lines of code, we have some basic imports. All three are built in modules so you don't have to download anything. The next line is a varible and we're storing a string in it. This will be are example text to print. Now comes the typewriter effect. We will start with a <b>for</b> loop and then declare another varible. In this case, we named it <b>x</b>. Remember this is just another varible, so it's arbitrary. Now we call <b>example</b> which we defined earlier. Now we indent the next line so it's inside the <b>for</b> loop. Next we print <b>x</b>. So what the code is saying is that for every character in <b>example</b>, which is a string, we print one character. Since we're using a <b>for</b> loop, this will go round and round till it prints the entire varible. Now we add <b>sys.stdout.flush()</b>. This basically tells the terminal to "flush" the buffer. Now is the fun part. The next line is a <b>sleep</b> function. This will be combining the <b>sleep</b> and <b>random</b> modules we imported. Normally when we use the <b>sleep</b> function, we just put a number (representing seconds) to delay the process. But if we add the <b>uniform</b> function after the <b>sleep</b>, this allows us to pick a random float. This will complete the effect and will print out each character one by one randomly to give it a great effect. Go ahead. Play around with the floats and see the diffrent delays you get.</p>
+									<p><b>IMPORTANT!</b> Note: This will only work with Python 3 or higher. This capability is a new feature in the Python 3 release.</p>
+									<p class="author-fix">Difficulty: Intermediate<br><br>January 28th, 2017<br><br><a href="b_miller_bio.html">Author: Brett Miller<img src="images/pic05.jpg" class="profile-author"></a></p>
+								</div>
+							</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Ultraviolet Code</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li><li>Photos: <a href="https://unsplash.com">Unsplash</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
