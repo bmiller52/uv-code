@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ultraviolet Code</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="logo/png" href="images/logo6.png">
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-91336179-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Ultraviolet Code</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="landing.html">Recent Posts</a></li>
+						<li><a href="html-css.html">HTML/CSS</a></li>
+						<li><a href="python.html">Python</a></li>
+						<li><a href="javascript.html">Javascript</a></li>
+						<li><a href="php.html">PHP</a></li>
+					</ul>
+					<ul class="actions vertical">
+						<li><a href="contact.html" class="button special fit">Contact</a></li>
+						<li><a href="authors.html" class="button fit">Authors</a></li>
+					</ul>
+				</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic37.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>HTML/CSS: Animatable CSS</h1>
+							</header>
+							<div class="content">
+								<p>Learn how CSS can be used in many diffrent ways.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Can CSS be Animatable?</h2>
+									</header>
+									<p>Why yes it can. Normally you would think you use jQuerry for animations, and in most cases you do. But here's a fun trick to try out using CSS. It's a simple box that fades colors. Let's see the code.</p>
+									<header class="major">
+										<h2>HTML</h2>
+									</header>
+									<p class="code-display">&lt;div id="empty-box"&gt; &lt;/div&gt;</p>
+									<header class="major">
+										<h2>CSS</h2>
+									</header>
+									<p class="code-display">#empty-box {<br>
+								    &nbsp;&nbsp;width: 300px;<br>
+								    &nbsp;&nbsp;height: 200px;<br>
+								    &nbsp;&nbsp;background: red;<br>
+								    &nbsp;&nbsp;animation: test 5s infinite;<br>
+									}<br><br>
+									@keyframes test {<br>
+									  &nbsp;&nbsp;from {background-color: red;}<br>
+									  &nbsp;&nbsp;to {background-color: blue;}<br>
+									}</p>
+									<p>Now as you see, we just created a box using a <b>div</b> tag. Then in our CSS, we set some basic height, width, and color properties for our example box. The next line has this <b>animation</b> propertie. Now what's that? This is how we fade the colors together. We first give it a variable name, then tell how long the fade should be, then if you ever want to stop it. In out case we don't want it to stop so we use <b>infinite</b>. In the next style, we use <b>@keyframes</b>, which is also part of the CSS3 transitions. Then we call the varible we set eralier, <b>test</b>. Now we just need to set a start and an end for the colors. With setting these colors, the <b>animation</b> property will do it's magic. Now lets see it work.</p>
+
+									<div id="empty-box"></div>
+
+									<p>This is great and all but this is not supported in Chrome, Safari, or Opera. Is there a way to do this in these other browsers you ask? Yes! Of course. In your <b>#empty-box</b> style, add this piece of code.</p>
+									<p class="code-display">-webkit-animation: test 5s infinite;</p>
+									<p>Then add a this new style.</p>
+									<p class="code-display">@-webkit-keyframes test {<br>
+									  &nbsp;&nbsp;from {background-color: red;}<br>
+									  &nbsp;&nbsp;to {background-color: blue;}<br>
+									}</p>
+									<p>Great, now it works in most browsers. I say most because this is not supported in Internet Explorer 9 and earlier versions. This is not the limt to animations in CSS. You can do many other things like changing sizes of elements, roatating elements, ect. Now here's the complete code for the CSS. </p>
+
+									<p class="code-display">#empty-box {<br>
+								    &nbsp;&nbsp;width: 300px;<br>
+								    &nbsp;&nbsp;height: 200px;<br>
+								    &nbsp;&nbsp;background: red;<br>
+								    &nbsp;&nbsp;animation: test 5s infinite;<br>
+										&nbsp;&nbsp;-webkit-animation: test 5s infinite;<br>
+									}<br><br>
+									@keyframes test {<br>
+									  &nbsp;&nbsp;from {background-color: red;}<br>
+									  &nbsp;&nbsp;to {background-color: blue;}<br>
+									}<br><br>
+									@-webkit-keyframes test {<br>
+										&nbsp;&nbsp;from {background-color: red;}<br>
+										&nbsp;&nbsp;to {background-color: blue;}<br>
+									}</p>
+
+									<p><b>Note:</b> This will not work in Internet Explorer 9 and earlier versions.</p>
+									<p class="author-fix">Difficulty: Intermediate<br><br>February 7th, 2017<br><br><a href="b_miller_bio.html">Author: Brett Miller<img src="images/pic05.jpg" class="profile-author"></a></p>
+								</div>
+							</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Ultraviolet Code</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li><li>Photos: <a href="https://unsplash.com">Unsplash</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
