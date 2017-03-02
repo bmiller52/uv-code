@@ -3525,7 +3525,7 @@
 		}
 
 		#banner.style2:after {
-			background-color: #606060;
+			background-color: rgba(60, 60, 60, 0.7);
 		}
 
 		#banner.style3:after {
@@ -4047,7 +4047,7 @@
 		-webkit-pointer-events: none;
 		-ms-pointer-events: none;
 		pointer-events: none;
-		background: rgba(36, 41, 67, 0.9);
+		background: rgba(36, 41, 67, 0.6);
 		box-shadow: none;
 		height: 100%;
 		left: 0;
@@ -4243,3 +4243,17 @@
 	    from {background-color: red;}
 	    to {background-color: blue;}
 	}
+
+/*Green
+1625 - #214235
+3837 - #2C5142
+3139 - #214235
+4206 - #2f5d4b
+4029 - #2C5142B3
+
+Original
+1625 - #242943
+3837 - #2a2f4a
+3139 - #2a2f4a
+4206 - #7f82c233
+4029 - rgba(36, 41, 67, 0.9)*/
