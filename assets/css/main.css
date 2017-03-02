@@ -1623,7 +1623,7 @@
 	}
 
 	body {
-		background: #242943;
+		background: #214235;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -2862,7 +2862,7 @@
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #8d82c4;
+				background-color: #ffffaa;
 			}
 
 			.tiles article:nth-child(6n - 3):before {
@@ -2870,11 +2870,11 @@
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #e7b788;
+				background-color: #8ea9e8;
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #8ea9e8;
+				background-color: #e7b788;
 			}
 
 			.tiles article:nth-child(6n):before {
@@ -3141,7 +3141,7 @@
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #2a2f4a;
+		background-color: #214235;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -3440,7 +3440,7 @@
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #2f5d4bcc;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3656,7 +3656,7 @@
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #2f5d4bcc;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3835,7 +3835,7 @@
 /* Main */
 
 	#main {
-		background-color: #2a2f4a;
+		background-color: #2C5142;
 	}
 
 		#main > * {
@@ -4047,7 +4047,7 @@
 		-webkit-pointer-events: none;
 		-ms-pointer-events: none;
 		pointer-events: none;
-		background: rgba(36, 41, 67, 0.9);
+		background: #2C5142B3;
 		box-shadow: none;
 		height: 100%;
 		left: 0;
@@ -4204,7 +4204,7 @@
 		}
 
 	.code-display {
-		background-color: #7f82c233;
+		background-color: #2f5d4b;
 		color: #bbb;
 		padding: 20px 35px;
 		font-family: monospace;
