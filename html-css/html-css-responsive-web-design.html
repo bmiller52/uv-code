@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Responsive Web Design | Ultraviolet Code</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" type="logo/png" href="../images/logo6.png">
+
+		<script src="../assets/js/pace.js"></script>
+	  <link href="../assets/css/pace-theme-minimal.css" rel="stylesheet" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="../assets/js/google.js"></script>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="../index.html" class="logo"><strong id="logo_name">Ultraviolet Code</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="../index.html" id="home_value"></a></li>
+						<li><a href="../all-posts.html" id="post_value"></a></li>
+						<li><a href="html-css/html-css.html" id="html_css_value"></a></li>
+						<li><a href="../python/python.html" id="python_value"></a></li>
+						<li><a href="../javascript/javascript.html" id="js_value"></a></li>
+						<li><a href="../php/php.html" id="php_value"></a></li>
+					</ul>
+					<ul class="actions vertical">
+						<li><a href="../contact.html" class="button special fit" id="contact_value"></a></li>
+						<li><a href="../authors/authors.html" class="button fit" id="team_value"></a></li>
+					</ul>
+				</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="../images/pic23.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>HTML/CSS: Responsive Web Design</h1>
+							</header>
+							<div class="content">
+								<p>What is responsive web design and how do we correctly use it?</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>What is it?</h2>
+									</header>
+									<p>Responsive web design is simply webpages that look good on any screen or device. Meaning that images, paragraghs, and other elements shrink, move, or enlarge depending on how big the screen size is. This wasn't a proplem for a while until phones became more popular. Here's a graph of all website data viewed on moblie devices from 2009 to 2017.</p>
+									<a href="../images/pic50.jpg"><img src="../images/pic50.jpg" class="img-code"></a>
+									<p>As you can see, making your website responsive to moblie is very important. You propley have seen some sites that have extremly small text and you have to zoom in to see it. That's a prime example of a poorly designed website. Infact developers now are taught to first make the website on moblie then adjust it to desktops or laptops.</p>
+									<p>For instence, here's a page you made on your desktop.</p>
+
+									<a href="../images/pic51.jpg"><img src="../images/pic51.jpg" class="img-code"></a>
+									<p>But this is what it looks like on moblie</p>
+									<a href="../images/pic52.jpg"><img src="../images/pic52.jpg" class="img-code-moblie"></a>
+									<p>Now the user has to scroll horizontaly over to see the entire page. This page looks ugly and often leaves your customers frustated and ther're unlikly to come back. Let's see a good responsive page on moblie now.</p>
+									<a href="../images/pic53.jpg"><img src="../images/pic53.jpg" class="img-code-moblie"></a>
+									<p>Now it's one continuous page scrolling down. This is much easier to read the information and your viwers will be happy. How do we acually code this? Here's a simple example for you to try out.</p>
+
+									<p class="code-display-too-big">
+										&lt;!DOCTYPE html&gt;<br>
+										&lt;html lang="en-us"&gt;<br>
+										&lt;head&gt;<br>
+										&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+										&lt;style&gt;<br>
+										.box {<br>
+										&nbsp;&nbsp;float: left;<br>
+										&nbsp;&nbsp;margin: 5px;<br>
+										&nbsp;&nbsp;padding: 15px;<br>
+										&nbsp;&nbsp;max-width: 300px;<br>
+										&nbsp;&nbsp;height: 300px;<br>
+										&nbsp;&nbsp;border: 1px solid black;<br>
+										}<br>
+										&lt;/style&gt;<br>
+										&lt;/head&gt;<br>
+										&lt;body&gt;<br><br>
+
+										&lt;h1&gt;Responsive Web Design Example&lt;/h1&gt;<br>
+										&lt;h2&gt;Try resizing your browser window&lt;/h2&gt;<br><br>
+
+										&lt;div class="box"&gt;<br>
+										&nbsp;&nbsp;&lt;h2&gt;Red&lt;/h2&gt;<br>
+										&nbsp;&nbsp;&lt;p&gt;Red is a prime color. Did you know that?&lt;/p&gt;<br>
+										&nbsp;&nbsp;&lt;p&gt;It can also be the color of an apple, and a shinny new bike&lt;/p&gt;<br>
+										&lt;/div&gt;<br><br>
+
+										&lt;div class="box"&gt;<br>
+										&nbsp;&nbsp;&lt;h2&gt;Green&lt;/h2&gt;<br>
+										&nbsp;&nbsp;&lt;p&gt;Green is the second prime color.&lt;/p&gt;<br>
+										&nbsp;&nbsp;&lt;p&gt;Green is the color of trees and grass in the spring time.&lt;/p&gt;<br>
+										&lt;/div&gt;<br>
+
+										&lt;div class="box"&gt;<br>
+										&nbsp;&nbsp;&lt;h2&gt;Blue&lt;/h2&gt;<br>
+										&nbsp;&nbsp;&lt;p&gt;Blue is the last prime color. Have you seen RGB?&lt;/p&gt;<br>
+										&nbsp;&nbsp;&lt;p&gt;It stands for Red, Green, Blue. &lt;/p&gt;<br>
+										&lt;/div&gt;<br><br>
+
+										&lt;div class="box"&gt;<br>
+										&nbsp;&nbsp;&lt;h2&gt;Yellow&lt;/h2&gt;<br>
+										&nbsp;&nbsp;&lt;p&gt;This is not a prime color.&lt;/p&gt;<br>
+										&nbsp;&nbsp;&lt;p&gt;You can make Yellow by mixing Red and Green.&lt;/p&gt;<br>
+										&lt;/div&gt;<br><br>
+
+										&lt;/body&gt;<br>
+										&lt;/html&gt;<br>
+									</p>
+
+									<p>As you can see, all of the magic is done in the CSS. The first rule is <b>float: left;</b>. It's saying for each box, at all times, push it as far to the left as posible. We then add <b>margin: 5px;</b>. We don't specify which side so it will add 5 pixels of margin all around the element. The same goes for the <b>padding</b>. The next two lines are just setting how big the box should be. And the last line adds a thin line all around the boxes.</p>
+									<p class="author-fix">Responsive web design, like in this example, can be really simple. But in other situations, it can get quite complex. Sometimes if you have a lot of content on the page and javascript, you have to tell the code to check to see how big the screen size is, then adjust accordingly. This will add much more code to write and will slow down your coding process. Another example is say you have a sidebar when your viewing the page on a desktop, but when someone sees it on a phone, you want that xtra context to hide and instead, have a button. Responsive web design is extremly important since phones are becoming more popular every day.</p>
+
+									<p>Difficulty: Intermediate<br><br>March 13th, 2017<br><br><a href="../authors/b_miller_bio.html">Author: Brett Miller<img src="../images/pic05.jpg" class="profile-author"></a></p>
+									<a href="../authors/k_gash_bio.html">Editor: Kellan Gash<img src="../images/pic47.jpg" class="profile-author"></a>
+								</div>
+							</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Ultraviolet Code</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li><li>Photos: <a href="https://unsplash.com">Unsplash</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/skel.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="../assets/js/main.js"></script>
+		<script src="../assets/js/menu_value.js"></script>
+        </div> <!-- not sure if this is where the div goes, but it was missing one when I got it so I stuck it here -->
+	</body>
+</html>
