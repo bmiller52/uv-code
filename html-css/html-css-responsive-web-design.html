@@ -38,8 +38,8 @@
 					<ul class="links">
 						<li><a href="../index.html" id="home_value"></a></li>
 						<li><a href="../all-posts.html" id="post_value"></a></li>
-						<li><a href="html-css/html-css.html" id="html_css_value"></a></li>
-						<li><a href="../python/python.html" id="python_value"></a></li>
+						<li><a href="../html-css/html-css.html" id="html_css_value"></a></li>
+						<li><a href="python.html" id="python_value"></a></li>
 						<li><a href="../javascript/javascript.html" id="js_value"></a></li>
 						<li><a href="../php/php.html" id="php_value"></a></li>
 					</ul>
@@ -60,7 +60,7 @@
 								<h1>HTML/CSS: Responsive Web Design</h1>
 							</header>
 							<div class="content">
-								<p>What is responsive web design and how do we correctly use it?</p>
+								<p>Learning how to correctly use responsive web design</p>
 							</div>
 						</div>
 					</section>
@@ -74,17 +74,23 @@
 									<header class="major">
 										<h2>What is it?</h2>
 									</header>
-									<p>Responsive web design is simply webpages that look good on any screen or device. Meaning that images, paragraghs, and other elements shrink, move, or enlarge depending on how big the screen size is. This wasn't a proplem for a while until phones became more popular. Here's a graph of all website data viewed on moblie devices from 2009 to 2017.</p>
+									<p>Responsive web design conceptually is how the display of a webpage conforms to appear on any screen or device. In application to a typical website, this means that images, paragraghs, and other elements shrink, move, or enlarge to fit what the screen size is. Not surprisingly, this particular web design characteristic wasn't a major issue until mobile devices such as smartphones and tablets became increasingly popular, as seen in the graph below: the viewing of any website data in general dramatically increased with the usage of mobile devices from 2009 to 2017.</p>
 									<a href="../images/pic50.jpg"><img src="../images/pic50.jpg" class="img-code"></a>
-									<p>As you can see, making your website responsive to moblie is very important. You propley have seen some sites that have extremly small text and you have to zoom in to see it. That's a prime example of a poorly designed website. Infact developers now are taught to first make the website on moblie then adjust it to desktops or laptops.</p>
-									<p>For instence, here's a page you made on your desktop.</p>
+									<p class="source-comment">Percentage data source from statista.com</p>
+									<p>Obviously, making your website responsive to mobile devices is pretty important in our current era. Many older websites are full of responsive web design errors, lacking the proper development to conform it to become mobile-friendly. An easy example of this is a website with extremely small text that requires an amount of zoom to be actually legible. More commonly now, however, developers are taught to first make the website on mobile, and then adjust it to desktops or laptops.</p>
+									<p>As an example of how our new modern responsive web design works, here's a page made on an average desktop.</p>
 
 									<a href="../images/pic51.jpg"><img src="../images/pic51.jpg" class="img-code"></a>
-									<p>But this is what it looks like on moblie</p>
+									<p>Without the proper use of responsive web design, this is its appearance on mobile.</p>
 									<a href="../images/pic52.jpg"><img src="../images/pic52.jpg" class="img-code-moblie"></a>
-									<p>Now the user has to scroll horizontaly over to see the entire page. This page looks ugly and often leaves your customers frustated and ther're unlikly to come back. Let's see a good responsive page on moblie now.</p>
+									<p>As you can see, the initial appearance is cut off, and the user has to scroll horizontaly over to see the entire page. This format looks unprofessional and is inefficient, leaving a messy website display and an unhappy user. Now let's take a look at a well-designed, responsive page on mobile.</p>
 									<a href="../images/pic53.jpg"><img src="../images/pic53.jpg" class="img-code-moblie"></a>
-									<p>Now it's one continuous page scrolling down. This is much easier to read the information and your viwers will be happy. How do we acually code this? Here's a simple example for you to try out.</p>
+									<p>Now it's one continuous page scrolling down, making it much easier to read the information and giving a pleasing display to the viewer.</p>
+
+									<header class="major">
+										<h2>Code Demo</h2>
+									</header>
+									<p>Here's a simple code demonstration for you to try out.</p>
 
 									<p class="code-display-too-big">
 										&lt;!DOCTYPE html&gt;<br>
@@ -110,35 +116,37 @@
 										&lt;div class="box"&gt;<br>
 										&nbsp;&nbsp;&lt;h2&gt;Red&lt;/h2&gt;<br>
 										&nbsp;&nbsp;&lt;p&gt;Red is a prime color. Did you know that?&lt;/p&gt;<br>
-										&nbsp;&nbsp;&lt;p&gt;It can also be the color of an apple, and a shinny new bike&lt;/p&gt;<br>
-										&lt;/div&gt;<br><br>
-
-										&lt;div class="box"&gt;<br>
-										&nbsp;&nbsp;&lt;h2&gt;Green&lt;/h2&gt;<br>
-										&nbsp;&nbsp;&lt;p&gt;Green is the second prime color.&lt;/p&gt;<br>
-										&nbsp;&nbsp;&lt;p&gt;Green is the color of trees and grass in the spring time.&lt;/p&gt;<br>
-										&lt;/div&gt;<br>
-
-										&lt;div class="box"&gt;<br>
-										&nbsp;&nbsp;&lt;h2&gt;Blue&lt;/h2&gt;<br>
-										&nbsp;&nbsp;&lt;p&gt;Blue is the last prime color. Have you seen RGB?&lt;/p&gt;<br>
-										&nbsp;&nbsp;&lt;p&gt;It stands for Red, Green, Blue. &lt;/p&gt;<br>
+										&nbsp;&nbsp;&lt;p&gt;Red can be found in apples, autumn leaves, and cardinals.&lt;/p&gt;<br>
 										&lt;/div&gt;<br><br>
 
 										&lt;div class="box"&gt;<br>
 										&nbsp;&nbsp;&lt;h2&gt;Yellow&lt;/h2&gt;<br>
-										&nbsp;&nbsp;&lt;p&gt;This is not a prime color.&lt;/p&gt;<br>
-										&nbsp;&nbsp;&lt;p&gt;You can make Yellow by mixing Red and Green.&lt;/p&gt;<br>
+										&nbsp;&nbsp;&lt;p&gt;Yellow is another prime color.&lt;/p&gt;<br>
+										&nbsp;&nbsp;&lt;p&gt;Yellow can be found daisies, lemons, and sunsets.&lt;/p&gt;<br>
 										&lt;/div&gt;<br><br>
+
+                                        &lt;div class="box"&gt;<br>
+										&nbsp;&nbsp;&lt;h2&gt;Blue&lt;/h2&gt;<br>
+										&nbsp;&nbsp;&lt;p&gt;Blue is the last prime color.&lt;/p&gt;<br>
+										&nbsp;&nbsp;&lt;p&gt;Blue can be found in the ocean, the sky, and robin eggs. &lt;/p&gt;<br>
+										&lt;/div&gt;<br>
+
+                                        &lt;div class="box"&gt;<br>
+										&nbsp;&nbsp;&lt;h2&gt;Green&lt;/h2&gt;<br>
+										&nbsp;&nbsp;&lt;p&gt;Green is not a prime color.&lt;/p&gt;<br>
+										&nbsp;&nbsp;&lt;p&gt;Green can be made by mixing blue and yellow together.&lt;/p&gt;<br>
+										&lt;/div&gt;<br><br>
+
 
 										&lt;/body&gt;<br>
 										&lt;/html&gt;<br>
 									</p>
 
-									<p>As you can see, all of the magic is done in the CSS. The first rule is <b>float: left;</b>. It's saying for each box, at all times, push it as far to the left as posible. We then add <b>margin: 5px;</b>. We don't specify which side so it will add 5 pixels of margin all around the element. The same goes for the <b>padding</b>. The next two lines are just setting how big the box should be. And the last line adds a thin line all around the boxes.</p>
-									<p class="author-fix">Responsive web design, like in this example, can be really simple. But in other situations, it can get quite complex. Sometimes if you have a lot of content on the page and javascript, you have to tell the code to check to see how big the screen size is, then adjust accordingly. This will add much more code to write and will slow down your coding process. Another example is say you have a sidebar when your viewing the page on a desktop, but when someone sees it on a phone, you want that xtra context to hide and instead, have a button. Responsive web design is extremly important since phones are becoming more popular every day.</p>
+									<p>As you can see, all the work is done by the CSS. The first rule is <b>float: left;</b>. This interprets as pushing each box at all times as far to the left as possible. We then add a <b>margin: 5px;</b> to give it a border around the webpage edge. Since we want to target the margins around each side of the element, no further specification is needed and it will add a 5 pixel margin all around the element. This applies to the <b>padding</b> as well. The next two lines simply set a basis for how big the box should be. Finally, the last line of code adds a thin border around the boxes to complete the look.</p>
 
-									<p>Difficulty: Intermediate<br><br>March 13th, 2017<br><br><a href="../authors/b_miller_bio.html">Author: Brett Miller<img src="../images/pic05.jpg" class="profile-author"></a></p>
+                  <p class="author-fix">Responsive web design is generally fairly simple as seen in the example above. All you have to do is add a few lines of code to your CSS and you're set. However, there is an extent to the simplicity of this tactic, as it can become quite complex when adding different elements to your webpage. Many times, lengthy but important adjustments and code corrections are required to allow the responsive web design to function smoothly. This is especially common when a webpage contains an extensive amount of content. Another example of these special requirements is coding a webpage that changes not only in formatting, but in function and appearance as well when transferred to mobile. There are many unique coding techniques that can be learned to focus on these specific responsive web design functions, but for now, let's stick with the basics.</p>
+
+									<p>Difficulty: Intermediate<br><br>March 15th, 2017<br><br><a href="../authors/b_miller_bio.html">Author: Brett Miller<img src="../images/pic05.jpg" class="profile-author"></a></p>
 									<a href="../authors/k_gash_bio.html">Editor: Kellan Gash<img src="../images/pic47.jpg" class="profile-author"></a>
 								</div>
 							</section>
@@ -163,6 +171,6 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="../assets/js/main.js"></script>
 		<script src="../assets/js/menu_value.js"></script>
-        </div> <!-- not sure if this is where the div goes, but it was missing one when I got it so I stuck it here -->
+        </div>
 	</body>
 </html>
