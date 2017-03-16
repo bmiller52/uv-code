@@ -1623,7 +1623,7 @@
 	}
 
 	body {
-		background: #242943;
+		background: #00264d;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -3141,7 +3141,7 @@
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #2a2f4a;
+		background-color: #00203F;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -3440,7 +3440,7 @@
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #00264d;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3656,7 +3656,7 @@
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #00264d;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3835,7 +3835,7 @@
 /* Main */
 
 	#main {
-		background-color: #2a2f4a;
+		background-color: #00264d;
 	}
 
 		#main > * {
@@ -3952,6 +3952,10 @@
 		}
 
 /* Footer */
+
+	#footer {
+		background-color: #00203F;
+	}
 
 	#footer .copyright {
 		font-size: 0.8em;
