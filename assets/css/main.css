@@ -4234,7 +4234,11 @@
 
 	.author-fix {
 		padding-bottom: 15px;
-		border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+		border-bottom: solid 1px rgba(255, 255, 255, 0.37);
+	}
+
+	.list-divider {
+		border-bottom: solid 1px rgba(255, 255, 255, 0.37);
 	}
 
 	#empty-box {

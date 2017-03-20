@@ -2,7 +2,7 @@
 var home = 'Home';
 document.getElementById("home_value").innerHTML = home;
 
-var post = 'Recent Posts';
+var post = 'All Posts';
 document.getElementById("post_value").innerHTML = post;
 
 var html_css = 'HTML/CSS';
