@@ -1871,6 +1871,14 @@
 
 	}
 
+	@media screen and (max-width: 480px) {
+
+		header.major {
+			max-width: 300px;
+		}
+
+	}
+
 /* Form */
 
 	form {
