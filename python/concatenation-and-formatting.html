@@ -60,7 +60,7 @@
 								<h1>Python: Concatenation and String Formatting</h1>
 							</header>
 							<div class="content">
-								<p></p>
+								<p>Learning all of the tricks to varibles and strings.</p>
 							</div>
 						</div>
 					</section>
@@ -75,28 +75,30 @@
 									<header class="major">
 										<h2>Introduction to Concatenation</h2>
 									</header>
-									<p>What is concatenation? It simply means to "link together". This means in Python you can combine any number of things like lists, tuples, strings, or dictionaries. Now concatenating isn't always adding. You can apply any mathematical equations to anything you're working on. Here's our first example with <b>strings</b>.</p>
+									<p>What is concatenation? By simple definition it means "to link together". Relating to Python, this particular method allows us to combine any number of things like lists, tuples, strings, or dictionaries together into one piece of code. Concatenating isn't always adding-- it can be related to any mathematical equations in any code you're working on. Our first example is with <b>strings</b>.</p>
 									<p class="code-display">>>> var1 = "exa"<br>>>> var2 = "mple"<br>>>> var1 + var2<br>'example'</p>
-									<p>This is cool but if you want to call this again, you have to write this again: <b>var1 + var2</b>. Instead there's a better way. You can make a new varible and assign the opperation to it. Now if we call the new varible, it will print what we added but we can also change the values in the two original strings.</p>
+									<p>This is a great start, but can become messy and inefficient: in order to call it again, you need to rewrite the <b>var1 + var2</b>. Although this isn't terribly extensive, this can become an issue in longer, more realistic examples. Here's where concatenation comes in. By creating a new variable and assigning the operation directly to it, we can call the new variable, and it will print the addition and simultaneously change the values in the two original strings.</p>
 									<p class="code-display">>>> var3 = var1 + var2<br>>>> var3<br>'example'</p>
-									<p>Now lets try out a new example with multiplication.</p>
+									<p>Here's another example with multiplication:</p>
 									<p class="code-display">>>> first_value = "red"<br>>>> first_value * 3<br>'redredred'</p>
-									<p>The output is all one word and that's because the original string didn't have a space in it. You can apply the same principal here also with making a new varible and putting the opperation inside.</p>
+									<p>Since the original string didn't include a space after the word 'red', the output is one unbroken word, and it can easily be changed to fit what you're going for. This same principal demonstrated here can be applied in the making of a new varible, then putting the operation inside it.</p>
 
 									<header class="major">
-										<h2>String Configureing</h2>
+										<h2>String Configuring</h2>
 									</header>
-									<p>Now in the example above, our proplem was making all of the words separate. Yes we could of just put a space in the string so it would print looking like they're separate, but it's still one string. What we want to achive it to get three separate strings. We can do this using the <b>split()</b> method.</p>
+									<p>In the example above, the output came out as one string. Even if we included the extra space at the end of the original string, the end result would still end up as a single string of three words. What we want to achieve for the sake of this experiment is to come up with three separate strings of our initial multiplied string. This can be done by using the <b>split()</b> method.</p>
 									<p class="code-display">>>> foo = "red"<br>>>> foo.split() * 3<br>['red', 'red', 'red']</p>
-									<p>One thing to note, this method puts the value into a list. This is proberly the best way to keep strings separate.</p>
+									<p>It is important to rememeber that this method puts the value into a list. While there are many different complicated ways in Python to seperate the strings, this is generally the simplest way to do it.</p>
 
 									<header class="major">
 										<h2>format() Function</h2>
 									</header>
-									<p>What if you want a string that would change depending on certain values in varibles. You can do this with the <b>format()</b> function. Lets see it in action.</p>
+									<p>How about a string that changes depending on certain values inside a varible? The <b>format()</b> function is probably the best way to demonstrate this idea. Let's take a look at it in action.</p>
 									<p class="code-display">>>> age = 35<br>>>> name = "Jerry"<br>>>> string = "Hello, my name is {} and I'm {} years old".format(name, age)<br>>>> string<br>"Hello, my name is Jerry and I'm 35 years old"</p>
-									<p>The two brackets are very important in this example. They act as a placeholder and then inside the <b>format()</b> we put the varible names so it puts whatever the value is in the varible and prints it with the string. You can also achive this without the brackets and with a percent sign and s - <b>%s</b>.</p>
-									<p class="author-fix">We will futher learn more advanced examples with concatenation and string formatting.</p>
+									<p>As you can see, the two brackets are very important in this example. They act as a placeholder for our changing value. Then, inside the <b>format()</b> we can insert whatever variable names we want. This ends up with our variables being included in the final output of the string that is printed out.
+
+                                    <!-- not sure if this last part here is necessary or comprehensible since you don't talk any more about it, (also it didn't work for me so I misunderstood something and I'm not sure how to clarify it for readers) maybe consider ommitting it? --> You can also achieve this without the brackets and with a percent sign and s - <b>%s</b>.</p>
+									<p class="author-fix">In future demonstrations, we will learn more advanced examples with concatenation and string formatting, going a bit further with this method's extensive uses.</p>
 
 									<p>Difficulty: Beginner<br>March 27th, 2017</p>
 									<a href="../authors/b_miller_bio.html">Author: Brett Miller</a><br>
