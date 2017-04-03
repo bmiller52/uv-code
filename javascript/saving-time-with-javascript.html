@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Saving Time With Javascript | Ultraviolet Code</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" type="logo/png" href="../images/logo6.png">
+
+		<script src="../assets/js/pace.js"></script>
+	  <link href="../assets/css/pace-theme-minimal.css" rel="stylesheet" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="../assets/js/google.js"></script>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="../index.html" class="logo"><strong id="logo_name">Ultraviolet Code</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="../index.html" id="home_value"></a></li>
+						<li><a href="../all-posts.html" id="post_value"></a></li>
+						<li><a href="../html-css/html-css.html" id="html_css_value"></a></li>
+						<li><a href="../python.html" id="python_value"></a></li>
+						<li><a href="javascript.html" id="js_value"></a></li>
+						<li><a href="../php/php.html" id="php_value"></a></li>
+					</ul>
+					<ul class="actions vertical">
+						<li><a href="../contact.html" class="button special fit" id="contact_value"></a></li>
+						<li><a href="../authors/authors.html" class="button fit" id="team_value"></a></li>
+					</ul>
+				</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="../images/pic58.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>JS: Saving Time With JavaScript</h1>
+							</header>
+							<div class="content">
+								<p>Maximizing efficiency in workflow</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Introduction</h2>
+									</header>
+									<p>In JavaScript, even the most basic coding can be time-consuming and ineffecient. Let's create a simple example website to demonstrate our time-saving technique. Say we have a website with 20+ pages. Most modern websites have a layout and color scheme that stays consistent for each page, and is compatible with the generic elements, such as the logo/title, menu/navigation bar, the body of the content, and the footer. In order to change any given aspect of the website, you'll have to go through each file and change it manually, which can take some time and become tedious. An easy way to eliminate that is by using <b>id's</b>.</p>
+
+									<header class="major">
+										<h2>Digging Deeper</h2>
+									</header>
+									<p>Instead of changing each file, you can give each list item an id, as seen in the HTML.</p>
+									<p class="code-display">
+										&lt;ul&gt;<br>
+											&nbsp;&nbsp;&lt;li&gt;&lt;a href="index.html" id="home_value"&gt;&lt;/a&gt;&lt;/li&gt;<br>
+											&nbsp;&nbsp;&lt;li&gt;&lt;a href="all-posts.html" id="post_value"&gt;&lt;/a&gt;&lt;/li&gt;<br>
+											&nbsp;&nbsp;&lt;li&gt;&lt;a href="contact.html" id="contact_value"&gt;&lt;/a&gt;&lt;/li&gt;<br>
+										&lt;/ul&gt;<br>
+									</p>
+									<p>Now that we have the HTML correct, we need to incorperate three simple lines of JavaScript.</p>
+									<p class="code-display">
+										document.getElementById("home_value").innerHTML = 'Home';<br>
+										document.getElementById("post_value").innerHTML = 'All Posts';<br>
+										document.getElementById("contact_value").innerHTML = 'Contact';
+									</p>
+
+									<p>The <b>getElementById</b> is used to target a place where we want to insert the text. Inside the parenthesis, we add the id name. To do this by using classes we could have used <b>getElementByClass</b> instead. Now this current script acts as the master control for the website. By simply changing the value in this script, it will carry this order on in every file you have, saving hours of time for websites with a large amount of files.</p>
+									<p>With a few simple tricks in JavaScript, your website work can become much easier in the long run.</p>
+
+									<p class="author-fix"></p>
+
+									<p>Difficulty: Beginner<br>April 3rd, 2017</p>
+									<a href="../authors/b_miller_bio.html">Author: Brett Miller</a><br>
+									<a href="../authors/k_gash_bio.html">Editor: Kellan Gash</a><br>
+									<a href="../authors/luke_bio.html">Creative Director: Luke Holsinger</a>
+								</div>
+							</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Ultraviolet Code</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li><li>Photos: <a href="https://unsplash.com">Unsplash</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/skel.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="../assets/js/main.js"></script>
+		<script src="../assets/js/menu_value.js"></script>
+        </div>
+	</body>
+</html>

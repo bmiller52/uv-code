@@ -11,7 +11,7 @@ document.getElementById("html_css_value").innerHTML = html_css;
 var python = 'Python';
 document.getElementById("python_value").innerHTML = python;
 
-var js = 'Coming Soon: Javascript';
+var js = 'Javascript';
 document.getElementById("js_value").innerHTML = js;
 
 var php = 'Coming Soon: PHP';
