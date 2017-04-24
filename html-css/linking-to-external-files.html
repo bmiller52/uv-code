@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Linking to External Files | Ultraviolet Code</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" type="logo/png" href="../images/logo6.png">
+
+		<script src="../assets/js/pace.js"></script>
+	  <link href="../assets/css/pace-theme-minimal.css" rel="stylesheet" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="../assets/js/google.js"></script>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="../index.html" class="logo"><strong id="logo_name">Ultraviolet Code</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="../index.html" id="home_value"></a></li>
+						<li><a href="../all-posts.html" id="post_value"></a></li>
+						<li><a href="html-css.html" id="html_css_value"></a></li>
+						<li><a href="../python/python.html" id="python_value"></a></li>
+						<li><a href="../javascript/javascript.html" id="js_value"></a></li>
+						<li><a href="../php/php.html" id="php_value"></a></li>
+					</ul>
+					<ul class="actions vertical">
+						<li><a href="../contact.html" class="button special fit" id="contact_value"></a></li>
+						<li><a href="../authors/authors.html" class="button fit" id="team_value"></a></li>
+					</ul>
+				</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="../images/pic62.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>HTML/CSS: Linking to External Files</h1>
+							</header>
+							<div class="content">
+								<p></p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Introduction</h2>
+									</header>
+									<p>In a lot of basic teaching on HTML and making webpages, a beginner procedure is to put all of your CSS and JavaScript code in the one big file together. Many courses will do this because it's simply easier to have everything in the same file, avoiding switching back and forth between different ones and getting lost. While there are a few perks to this method of coding, it often can become convoluted and messy once you have about twenty different pages on your website. That makes you have to change the code in every single page file in order to change any formatting style for your whole website, and who has time for that? There are definitely many smoother ways to connect your CSS and JS to the main HTML file, and external files is a really helpful solution we like to use for this. The concept is simple: split up each individual language into their own files, creating a dominant file for each type of code that can be easily connected to your HTML. This way, when you change one element of styling in the CSS file, it will change among all of the HTML files linked to it. The same concept applies to JavaScript. Here's an example to link to a CSS file:</p>
+
+									<p class="code-display">
+										&lt;link href="css/main.css" rel="stylesheet"&gt;
+									</p>
+
+									<p>Unlike most other HTML tags, <b>link</b> is a "stand alone", meaning it only has an opening tag and no close. Right after this, the <b>href</b> attribute stands for <b>Hyperlink Reference</b>; this is a key element here as it's allowing us to actually go about linking whatever external file we want to reference our main file to. Inside the quotes is the path to wherever your file is stored. In this example, it's path is to go to the folder named <b>css</b>, then find the file named <b>main.css</b> inside that folder. If there are multiple folders the file is stored inside, you simply list the broadest folder first, and work your way down with each slash until you get there. The final part is the <b>rel</b> attribute, which specifies the relationship between the current document and the linked document. For a CSS file we use <b>stylesheet</b>.</p>
+									<p>Now that we've made the tag, we need to place it correctly. The best line to insert it in for most code is inside the <b>head</b> tags. Here is the most convenient spot to put it as everything inside the <b>head</b> loads even before the page itself does. It gets first priority as opposed to the <b>body</b> tags, which get loaded afterwards. Since we want to load the styling before the main content of the page gets there, this is important to remember. The process for linking to a JS file is a bit different, but no less easy:</p>
+
+									<p class="code-display">
+										&lt;script src="js/scripts.js"&gt;&lt;/script&gt;
+									</p>
+
+									<p>For the JavaScript to work we use <b>script</b> tags (which do have an opening and close). Instead of using a <b>href</b>, JS requires <b>src</b>, which quite simply means <b>source</b>. Making the path to the file is exactly the same as before, only we want our JavaScript file instead of our CS this time. There are varying opinions on where to put the <b>script</b> tag--some put it in the <b>head</b> with their CS file, but I would recommend putting it at the very end of the code, right before the closing <b>body</b> tag. While it's not necessary, it is pretty useful, as when you try to load the JS before the rest of the page, it can take a while to get to the actual content of the page.</p>
+									<p>If this is done correctly, you now have a master control with all of your CSS and JavaScript tidily stored away in their own files but still just as functional to your website.</p>
+
+									<p class="author-fix"></p>
+
+									<p>Difficulty: Beginner<br>April 24th, 2017</p>
+									<a href="../authors/b_miller_bio.html">Author: Brett Miller</a><br>
+									<a href="../authors/k_gash_bio.html">Editor: Kellan Gash</a><br>
+									<a href="../authors/luke_bio.html">Creative Director: Luke Holsinger</a>
+								</div>
+							</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Ultraviolet Code</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li><li>Photos: <a href="https://unsplash.com">Unsplash</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/skel.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="../assets/js/main.js"></script>
+		<script src="../assets/js/menu_value.js"></script>
+        </div>
+	</body>
+</html>
