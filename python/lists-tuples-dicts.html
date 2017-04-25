@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Lists, Tuples, and Dictionaries | Ultraviolet Code</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" type="logo/png" href="../images/logo6.png">
+
+		<script src="../assets/js/pace.js"></script>
+	  <link href="../assets/css/pace-theme-minimal.css" rel="stylesheet" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="../assets/js/google.js"></script>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="../index.html" class="logo"><strong id="logo_name">Ultraviolet Code</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="../index.html" id="home_value"></a></li>
+						<li><a href="../all-posts.html" id="post_value"></a></li>
+						<li><a href="../html-css/html-css.html" id="html_css_value"></a></li>
+						<li><a href="python.html" id="python_value"></a></li>
+						<li><a href="../javascript/javascript.html" id="js_value"></a></li>
+						<li><a href="../php/php.html" id="php_value"></a></li>
+					</ul>
+					<ul class="actions vertical">
+						<li><a href="../contact.html" class="button special fit" id="contact_value"></a></li>
+						<li><a href="../authors/authors.html" class="button fit" id="team_value"></a></li>
+					</ul>
+				</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="../images/pic60.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Python: Lists, Tuples, and Dictionaries</h1>
+							</header>
+							<div class="content">
+								<p>Learning the differences between all three</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Introduction</h2>
+									</header>
+									<p>Many beginners that are initially delving into the Python coding language get stuck on storing data when making games, apps, or other useful projects in it. There are three major ways to do this that are common to most coders: lists, tuples, and dictionaries. Since they can get a tad bit complicated, we'll jump right in to covering the basic principles of each, and how to use them. </p>
+
+									<header class="major">
+										<h2>Lists</h2>
+									</header>
+									<p>Lists are mostly self-explanitory: they will hold however many items you want to add in a list format. One very useful  aspect to a list is that they are are modifiable (or 'mutable', to be coding-savvy), allowing the user to change the order of items, add more items, and etcetera. They are created simply by typing a name for the list, then setting it equal to your list items inside a pair of square brackets.</p>
+									<p class="code-display">ice_cream_flavors = ['Vanilla', 'Mint', 'Chocolate', 'Coffee']</p>
+									<p>Inside our list, we added four individual strings, which are our current list items. The other possible items that can be added to any list are integers. No matter what the item, each value must be seperated by a comma. </p>
+									<p><b>Rule of Thumb:</b> Python, along with many coding languages, counts starting from zero. So in the example above, we users see four items, but Python reads it as three (Vanilla 0, Mint 1, Chocolate 2, Coffee 3). This is true for everything in Python, so it is important to keep in mind!</p>
+
+									<header class="major">
+										<h2>Tuples</h2>
+									</header>
+									<p>Tuples are very similar to lists when it comes to storing data, but have one major difference. They are immutable, meaning they cannot be changed ever. How would this ever come in to play? Can't we just use lists instead? While it is true that in most cases you will use lists, there are a few scenarios where tuples come in handy. Say you've created a game where you want to store the players hitpoints. In case you aren't a gamer, know that this is a number you don't want jumping around and changing in most cases. Here's where you'd use tuples instead of a list; by storing it this way the numbers will stay consistent and secure. Tuples are created by simply using parentheses and listing your strings or integers inside.</p>
+									<p class="code-display">days = ('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday')</p>
+
+									<header class="major">
+										<h2>Dicionaries</h2>
+									</header>
+									<p>Dicionaries are much different than lists or tuples, although they are often grouped together with them. Their defining compenent is what's called a <b>key</b>. Inside each key is stored a <b>value</b>. To create this, we use curly braces. A profile is a good example dictionary.</p>
+									<p class="code-display">profile = {'Name': 'Jerry', 'Age': 37, 'Occupation': 'Painter'}</p>
+									<p>As you can see, each key (the 'Name', 'Age', and 'Occupation') is seperated with a colon, and we distinguish the key and value with a comma at the end. The values can even be left blank, allowing the user to enter in his or her desired information. After that, we can call back the dictionary and print the key without knowing anything about the value. Let's see what printing a key inside a dictionary looks like.</p>
+									<p class="code-display">>>> profile['Age']<br>37</p>
+									<p>Calling the key is elementary Python. Simply type in the dictionary name, then enter in whatever key you want inside square brackets.</p>
+
+									<header class="major">
+										<h2>Conclusion</h2>
+									</header>
+									<p>Speaking from personal experience, I have found lists the most helpful in my coding, but there have certainly been uses for all three of them in my years of coding. Now that you know the distinctions between them, I'm sure you will find many uses for them as well!</p>
+
+									<p class="author-fix"></p>
+
+									<p>Difficulty: Beginner<br>May 1st, 2017</p>
+									<a href="../authors/b_miller_bio.html">Author: Brett Miller</a><br>
+									<a href="../authors/k_gash_bio.html">Editor: Kellan Gash</a><br>
+									<a href="../authors/luke_bio.html">Creative Director: Luke Holsinger</a>
+								</div>
+							</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Ultraviolet Code</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li><li>Photos: <a href="https://unsplash.com">Unsplash</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/skel.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="../assets/js/main.js"></script>
+		<script src="../assets/js/menu_value.js"></script>
+        </div> <!-- not sure if this is where the div goes, but it was missing one when I got it so I stuck it here -->
+	</body>
+</html>
