@@ -42,7 +42,7 @@
 						<li><a href="../html-css/html-css.html" id="html_css_value"></a></li>
 						<li><a href="../python/python.html" id="python_value"></a></li>
 						<li><a href="../javascript/javascript.html" id="js_value"></a></li>
-						<li><a href="../php/php.html" id="php_value"></a></li>
+						<li><a href="../django/django.html" id="django_value"></a></li>
 					</ul>
 					<ul class="actions vertical">
 						<li><a href="../contact.html" class="button special fit" id="contact_value"></a></li>
@@ -61,7 +61,7 @@
 								<h1>HTML/CSS: The Link Tag</h1>
 							</header>
 							<div class="content">
-								<p>Understanding what the link tag can do in HTML</p>
+								<p>Understanding the abilities of the link tag</p>
 							</div>
 						</div>
 					</section>
@@ -76,18 +76,18 @@
 									<header class="major">
 										<h2>Introduction</h2>
 									</header>
-									<p>We have already discussed how to link to a external file in a pervious tutorial - <a href="linking-to-external-files.html">Linking to External Files</a>. But the link tag is also used in other ways. Another common usage that basically all websites have, is having an incon in the top corner of a tab (Except for Safari, which takes out all icons by default). To do this, we need just two attributes - <b>rel</b> and <b>href</b>. Remember <b>rel</b> is short for <b>relationship</b> and <b>href</b> is <b>Hyperlink Refrence</b>.</p>
+									<p>We have already discussed how to link to a external file in a pervious tutorial - <a href="linking-to-external-files.html">Linking to External Files</a>. However, the link tag can also be used in several other ways. A common element that nearly all modern websites have today is an icon in the top right corner of a tab (Except for Safari, which takes out all icons by default). The icon not only acts as a strong marketing technique, but also as a link, which we will be focusing on. In order to master this, we need just two attributes - <b>rel</b> and <b>href</b>. Remember that <b>rel</b> is short for <b>relationship</b> and <b>href</b> is the <b>Hyperlink Refrence</b>.</p>
 
 									<p class="code-display">
 										&lt;link rel="icon" href="logo.jpg"&gt;
 									</p>
 
-									<p>As you can see, it's quiet simple. Just make sure that the path to the image is correct. You may have to go in or out of a folder depending on where the picture is saved.</p>
+									<p>As you can see, it's a fairly simple process. The most important part here is making sure that the path to the image is correct. Depending on where the picture is saved, you may have to go in or out of multiple foldes to have the code run correctly.</p>
 
 									<header class="major">
-										<h2>Other Usages</h2>
+										<h2>Other Uses</h2>
 									</header>
-									<p>Here's a list of all of the values you can use for the rel attribute.</p>
+									<p>The <b>rel</b> attribute, as previously stated, has an extensive amount of uses. It is a key element to HTML for multiple reasons, as seen in the list of possible uses for it below.</p>
 									<ul>
 										<li>alternate</li>
 										<li>author</li>
@@ -105,7 +105,8 @@
 										<li>search</li>
 										<li>stylesheet</li>
 									</ul>
-									<p><b>Preconnect</b> is used to tell the browser to preemptively connect to the origin of the resource. And others like <b>next</b> and <b>license</b> provide links to other documents and information. However, the most common ones you'll use, probably will be <b>icon</b> and <b>sylesheet</b> because they import things that are essential to every webpage. To see more on the <b>stylesheet</b> value, see <a href="linking-to-external-files.html">Linking to External Files</a>.</p>
+									<p>If you use Brackets, the program should come up with this list of suggestions as soon as you type in <b>rel = </b>. Let's take a closer look at a few of them to try to understand the importance of them.<b>Preconnect</b> is used to tell the browser to preemptively connect to the origin of the resource. While this sounds confusing, it really is simple and helpful.
+										<!-- not sure if this next part is correct, fix it if I'm wrong but I do think it needs a clarification on what 'preconnect does'--> All it does is make sure the code for whatever you're linking files to runs before anything else--a type of headstart before the other code so that all of the links will run smoothly once the actual website loads. That can be really useful. Others like <b>next</b> and <b>license</b> provide links to other documents and information <!--information to what? Links to other documents and information outside of the website? Try to expand on this in the same sentence-->. However, the most common ones you will likely use will be <b>icon</b> and <b>sylesheet</b>, as they import things that are essential to every webpage. <!--if you want to make the tutorial a little longer (you don't have to), you can add something that explains the basic function of 'icon' right here--> To see more on the <b>stylesheet</b> value, see <a href="linking-to-external-files.html">Linking to External Files</a>.</p>
 
 									<p class="author-fix"></p>
 

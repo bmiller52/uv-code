@@ -14,8 +14,8 @@ document.getElementById("python_value").innerHTML = python;
 var js = 'Javascript';
 document.getElementById("js_value").innerHTML = js;
 
-var php = 'Coming Soon: PHP';
-document.getElementById("php_value").innerHTML = php;
+var django = 'Coming Soon: Django';
+document.getElementById("django_value").innerHTML = django;
 
 var contact = 'Contact';
 document.getElementById("contact_value").innerHTML = contact;
