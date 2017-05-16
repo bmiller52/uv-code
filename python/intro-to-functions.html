@@ -60,7 +60,7 @@
 								<h1>Python: Intro to Functions</h1>
 							</header>
 							<div class="content">
-								<p>Learning the basics of functions and keeping your code clean</p>
+								<p>Learning the concept of functions</p>
 							</div>
 						</div>
 					</section>
@@ -74,28 +74,28 @@
 									<header class="major">
 										<h2>Introduction</h2>
 									</header>
-									<p>Lets start off by what functions are. A function is a block of code that can be reused however many times as you want. Python comes with predefined functions like <b>print()</b> and <b>raw_input()</b>. But we can still make our own functions to make our code cleaner and more compact. We do this by writing <b>def</b>, which is short for define, then your function name followed by opening and closing parentheses and a colon.</p>
+									<p>What are functions? In simple terms, they are blocks of code that can be reused however many times you want to call on them. Python already comes with predefined functions like <b>print()</b> and <b>raw_input()</b>. However, as coders we can still make our own functions to make the code cleaner and more compact. By typing in <b>def</b> (which  abbreviates define), the function name, followed by an opening and closing parentheses and a colon, you've created a function. From there, you can fill it with whatever you need to be inside that function.</p>
 
 									<p class="code-display">
 										def profile_setup():<br>
 										&nbsp;&nbsp;question1 = raw_input('Hello, what is your name? ')<br>
 										&nbsp;&nbsp;question2 = raw_input('How old are you? ')<br>
-										&nbsp;&nbsp;question3 = raw_input('What\'s your job? ')<br>
+										&nbsp;&nbsp;question3 = raw_input('What\'s your occupation? ')<br>
 										<br>
 										&nbsp;&nbsp;print()
 										&nbsp;&nbsp;print('Name: ' + question1)<br>
 										&nbsp;&nbsp;print('Age: ' + question2)<br>
-										&nbsp;&nbsp;print('Job: ' + question3)<br>
+										&nbsp;&nbsp;print('Occupation: ' + question3)<br>
 									</p>
 
-									<p>Now if you run this code in a script or the Python console, nothing will happen. That's because we only defined it but never called it. To do this we just type the function name with the parentheses.</p>
+									<p>While this is a correctly formatted function, nothing will happen if this code is run in a script or the Python console. The reason for this is that we only defined the function, but never called it. This can easily be fixed by typing in the function name and parenthesis.</p>
 									<p class="code-display">profile_setup()</p>
-									<p>Now if we call it, it will prompt use the three questions, then output the responses. This is really handy when you want to use this multiple times. So now, you only need to type the code out once, but it can be used however many times you need. </p>
+									<p>By calling it, the code set up inside the function will run, prompting the three questions, then outputting the responses. This is extremely useful, since it allows you to reuse the same pieces of code however many times needed. Now, when needing a large segment of code multiple times to be run throughout the rest of the code, that code can be put inside a function, and called on seperately each time. Several other useful benefits to functions is how they eliminate higher chances of syntax errors and repetitively convoluted code. </p>
 
 									<header class="major">
 										<h2>Going Further with Functions</h2>
 									</header>
-									<p>But what if we want the user to enter in something before we run the function to determine the output of the function. Here's a real simple example.</p>
+									<p>What if the user wants to enter in some other code including the function's code, before actually running the function?  Many coders will do this to determine the output of the function. Here's a basic example of this.</p>
 
 									<p class="code-display">
 										def do_math(x, y):<br>
@@ -108,16 +108,16 @@
 										do_math(num1, num2)
 									</p>
 
-									<p>If your run this script, the user will determine to two numbers that the function will add. What we put inside the parentheses when we define the function, is arbitrary. They are essentially varibles. Although, notice the <b>int</b> function that is outside of the <b>raw_input</b>. This program wouldn't work without it. It just parses whatever the user inputs to be an integer. If we didn't have this, it would look at it as a string and would concatenate it. So it wouldn't acually add the numbers.</p>
+									<p>This script allows the user to determine two numbers that the function will add. What is inside the parenthesis when defining the function is arbitrary: they are essentially variables. Notice the <b>int</b> function (a pre-defined Python function) that is outside of the <b>raw_input</b>. Without this, the program wouldn't run. In simple terms, it parses whatever the user inputs to be read as an integer. Otherwise, the console would look at it as a string and would concatenate it, which isn't what we want in this example. This way, though, it adds the two numbers by recognizing them as integers and through this function method.</p>
 
 									<header class="major">
 										<h2>Conclusion</h2>
 									</header>
-									<p>Functions are very helpful esspesially when you code DRY (Don't Repeat Yourself). Many times when you make games or just any program, you're going to need functions to keep your code clean and DRY. </p>
+									<p>Functions are very commonly used by the most professional Python coders, but they aren't a difficult concept to grasp, which is why they are so universally used. With this in your pocket, it will be much easier to work with Python, especially for coding DRY (Don't Repeat Yourself). In games, programs, and practically any other use for Python, functions are essential to keeping your code clean and DRY. </p>
 
 									<p class="author-fix"></p>
 
-									<p>Difficulty: Beginner<br>May 8th, 2017</p>
+									<p>Difficulty: Beginner<br>May 16th, 2017</p>
 									<a href="../authors/b_miller_bio.html">Author: Brett Miller</a><br>
 									<a href="../authors/k_gash_bio.html">Editor: Kellan Gash</a><br>
 									<a href="../authors/luke_bio.html">Creative Director: Luke Holsinger</a>
@@ -144,6 +144,6 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="../assets/js/main.js"></script>
 		<script src="../assets/js/menu_value.js"></script>
-        </div> <!-- not sure if this is where the div goes, but it was missing one when I got it so I stuck it here -->
+    		</div>
 	</body>
 </html>

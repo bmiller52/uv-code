@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>The Differences Between Margin and Padding | Ultraviolet Code</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" type="logo/png" href="../images/logo6.png">
+
+		<script src="../assets/js/pace.js"></script>
+	  <link href="../assets/css/pace-theme-minimal.css" rel="stylesheet" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="../assets/js/google.js"></script>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="../index.html" class="logo"><strong id="logo_name">Ultraviolet Code</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="../index.html" id="home_value"></a></li>
+						<li><a href="../all-posts.html" id="post_value"></a></li>
+						<li><a href="html-css.html" id="html_css_value"></a></li>
+						<li><a href="../python/python.html" id="python_value"></a></li>
+						<li><a href="../javascript/javascript.html" id="js_value"></a></li>
+						<li><a href="../django/django.html" id="django_value"></a></li>
+					</ul>
+					<ul class="actions vertical">
+						<li><a href="../contact.html" class="button special fit" id="contact_value"></a></li>
+						<li><a href="../authors/authors.html" class="button fit" id="team_value"></a></li>
+					</ul>
+				</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="../images/pic65.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>HTML/CSS: The Differences Between Margin and Padding</h1>
+							</header>
+							<div class="content">
+								<p>Explaining how they are diffrent and how to use them</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Margin vs. Padding</h2>
+									</header>
+									<p>Many beginners struggle with knowing what is margin and padding in CSS. I know I didn't understand this when I started with HTML/CSS and had no idea when to use one over the other. Something to help demonstrate this is the <b>Box Model</b>.</p>
+
+									<a href="../images/pic66.jpg"><img src="../images/pic66.jpg" alt="Box Model" class="img-code"/></a>
+
+									<p><b><br>Margin</b> will seperate the entire element from other elements. In other words, it generates the white space outside the border as seen in the Box Model. </p>
+									<p><b>Padding</b> will push the border away from the content. The content can be text or an image. </p>
+
+									<header class="major">
+										<h2>Usage</h2>
+									</header>
+									<p>If you use just <b>margin: ;</b> in a CSS property, you need 4 attributes. It will start from the top and work clockwise. Like this <b>margin: top, right, bottom, left;</b> Here's a real example.</p>
+									<p class="code-display">margin: 40px, 10px, 40px, 10px;</p>
+									<p>This will add 40 pixels of margin to the top and bottom, and 10 pixels to the right and left. But you can also specify which side you want to add margin to. Here's a list of all of the properties.</p>
+									<ul>
+										<li>margin-top</li>
+										<li>margin-right</li>
+										<li>margin-bottom</li>
+										<li>margin-left</li>
+									</ul>
+									<p>For these properties, you need just one attribute. All of the same rules apply to padding. </p>
+
+									<header class="major">
+										<h2>Examples</h2>
+									</header>
+									<p>Let's look into some examples to demonstrate margin and padding. First, we'll see margin.</p>
+									<p><b>Remember: </b>If you only apply one attribute when you use <b>margin</b>, it wil set it for all sides. You will see it in this example.</p>
+
+									<h3>Code</h3>
+									<p class="code-display">div {<br>
+									&nbsp;&nbsp;border: solid 2px green;<br>
+									&nbsp;&nbsp;margin: 50px;<br>
+									}</p>
+									<h3>Output</h3>
+									<div class="margin-demo2">This example has 50 pixles of margin all around.</div>
+									<h3>Output with no margin</h3>
+									<div class="margin-demo1">This example has 0 pixles of margin all around.</div>
+
+									<header class="major">
+										<h2>Padding Examples</h2>
+									</header>
+									<p>Now let's see padding in an example.</p>
+									<h3>Code</h3>
+									<p class="code-display">div {<br>
+									&nbsp;&nbsp;border: solid 2px green;<br>
+									&nbsp;&nbsp;padding: 50px;<br>
+									}</p>
+									<h3>Output</h3>
+									<div class="padding-demo2">This example has 50 pixles of margin all around.</div>
+									<h3>Output with no margin</h3>
+									<div class="padding-demo1">This example has 0 pixles of margin all around.</div>
+
+									<header class="major">
+										<h2>Conclusion</h2>
+									</header>
+									<p>So always remember the Box Model. That is what helped me in knowing the differences between margin and padding. I have used both properties numerous amounts of times and you will properly too.</p>
+
+									<p class="author-fix"></p>
+
+									<p>Difficulty: Beginner<br>May 22nd, 2017</p>
+									<a href="../authors/b_miller_bio.html">Author: Brett Miller</a><br>
+									<a href="../authors/k_gash_bio.html">Editor: Kellan Gash</a><br>
+									<a href="../authors/luke_bio.html">Creative Director: Luke Holsinger</a>
+								</div>
+							</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Ultraviolet Code</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/skel.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="../assets/js/main.js"></script>
+		<script src="../assets/js/menu_value.js"></script>
+        </div>
+	</body>
+</html>

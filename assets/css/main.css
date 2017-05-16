@@ -4215,6 +4215,27 @@
 			visibility: visible;
 		}
 
+	.margin-demo1 {
+		border: solid 3px rgb(51, 204, 204);
+		margin-bottom: 25px;
+	}
+
+	.margin-demo2 {
+		border: solid 3px rgb(51, 204, 204);
+		margin: 50px;
+	}
+
+	.padding-demo1 {
+		border: solid 3px rgb(51, 204, 204);
+		margin-bottom: 25px;
+	}
+
+	.padding-demo2 {
+		border: solid 3px rgb(51, 204, 204);
+		padding: 50px;
+		margin-bottom: 15px;
+	}
+
 	.code-display {
 		background-color: #7f82c233;
 		color: #bbb;
