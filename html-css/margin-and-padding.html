@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>The Differences Between Margin and Padding | Ultraviolet Code</title>
+		<title>Margin and Padding | Ultraviolet Code</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -57,10 +57,10 @@
 								<img src="../images/pic65.jpg" alt="" />
 							</span>
 							<header class="major">
-								<h1>HTML/CSS: The Differences Between Margin and Padding</h1>
+								<h1>HTML/CSS: Margin and Padding</h1>
 							</header>
 							<div class="content">
-								<p>Explaining how they are diffrent and how to use them</p>
+								<p>Comparing their qualities and appropriate uses</p>
 							</div>
 						</div>
 					</section>
@@ -74,32 +74,32 @@
 									<header class="major">
 										<h2>Margin vs. Padding</h2>
 									</header>
-									<p>Many beginners struggle with knowing what is margin and padding in CSS. I know I didn't understand this when I started with HTML/CSS and had no idea when to use one over the other. Something to help demonstrate this is the <b>Box Model</b>.</p>
+									<p>One of the most common struggles with CSS is determining how and when to use margin or padding. As a beginner to HTML and CSS this definitely confused me, and was much easier to understand with a visual demonstration to explain it. Let's take a look at it with the <b>Box Model</b>.</p>
 
 									<a href="../images/pic66.jpg"><img src="../images/pic66.jpg" alt="Box Model" class="img-code"/></a>
 
-									<p><b><br>Margin</b> will seperate the entire element from other elements. In other words, it generates the white space outside the border as seen in the Box Model. </p>
-									<p><b>Padding</b> will push the border away from the content. The content can be text or an image. </p>
+									<p><b><br>Margin</b> seperates the entire element from all of the other elements. In other words, it generates the white space outside the border as seen in the Box Model. </p>
+									<p><b>Padding</b> pushes the border away from the content. The content can be text, an image, etc. </p>
 
 									<header class="major">
-										<h2>Usage</h2>
+										<h2>Application</h2>
 									</header>
-									<p>If you use just <b>margin: ;</b> in a CSS property, you need 4 attributes. It will start from the top and work clockwise. Like this <b>margin: top, right, bottom, left;</b> Here's a real example.</p>
+									<p>When using just <b>margin: ;</b> or <b>padding: ;</b> in a CSS property, four specifications are necessary. Starting from the top, the four margin or padding attributes work their way around clockwise like so--<b>margin: top, right, bottom, left;</b> and <b>padding: top, right, bottom, left;</b>. Using the margin as the example here, this is what it should look like in the actual CSS code,:</p>
 									<p class="code-display">margin: 40px, 10px, 40px, 10px;</p>
-									<p>This will add 40 pixels of margin to the top and bottom, and 10 pixels to the right and left. But you can also specify which side you want to add margin to. Here's a list of all of the properties.</p>
+									<p>This method will add all of the margins for each side at once in one property (40 pixels of margin to the top and bottom, and 10 pixels to the right and left). In addition to this, there's another method that will do the same thing, only specifying whatever individual side the margin is being added to. As seen below, there are four different properties for the four different sides.</p>
 									<ul>
 										<li>margin-top</li>
 										<li>margin-right</li>
 										<li>margin-bottom</li>
 										<li>margin-left</li>
 									</ul>
-									<p>For these properties, you need just one attribute. All of the same rules apply to padding. </p>
+									<p>Each of these only requires one attribute, for example: <br><p class="code-display">margin-top: 40px;</p> Similarly, all the same rules apply to padding as well. </p>
 
 									<header class="major">
 										<h2>Examples</h2>
 									</header>
-									<p>Let's look into some examples to demonstrate margin and padding. First, we'll see margin.</p>
-									<p><b>Remember: </b>If you only apply one attribute when you use <b>margin</b>, it wil set it for all sides. You will see it in this example.</p>
+									<p>To further demonstrate and recap margin and padding, let's look at several examples.</p>
+									<p><b>Remember: </b>If you only apply one attribute when you use simply <b>margin</b> or <b>padding</b>, it will set that number for all four sides as in the example below (starting with the margin).</p>
 
 									<h3>Code</h3>
 									<p class="code-display">div {<br>
@@ -107,32 +107,32 @@
 									&nbsp;&nbsp;margin: 50px;<br>
 									}</p>
 									<h3>Output</h3>
-									<div class="margin-demo2">This example has 50 pixles of margin all around.</div>
-									<h3>Output with no margin</h3>
-									<div class="margin-demo1">This example has 0 pixles of margin all around.</div>
+									<div class="margin-demo2">This example has 50 pixels of margin all around.</div>
+									<br><h3>Output with no margin</h3>
+									<div class="margin-demo1">This example has 0 pixels of margin all around.</div>
 
-									<header class="major">
+									<br><br><header class="major">
 										<h2>Padding Examples</h2>
 									</header>
-									<p>Now let's see padding in an example.</p>
+									<p>In the same way, we can demonstrate padding in a similar example.</p>
 									<h3>Code</h3>
 									<p class="code-display">div {<br>
 									&nbsp;&nbsp;border: solid 2px green;<br>
 									&nbsp;&nbsp;padding: 50px;<br>
 									}</p>
 									<h3>Output</h3>
-									<div class="padding-demo2">This example has 50 pixles of margin all around.</div>
-									<h3>Output with no margin</h3>
-									<div class="padding-demo1">This example has 0 pixles of margin all around.</div>
+									<div class="padding-demo2">This example has 50 pixels of padding all around.</div>
+									<br><h3>Output with no margin</h3>
+									<div class="padding-demo1">This example has 0 pixels of padding all around.</div>
 
-									<header class="major">
+									<br><br><header class="major">
 										<h2>Conclusion</h2>
 									</header>
-									<p>So always remember the Box Model. That is what helped me in knowing the differences between margin and padding. I have used both properties numerous amounts of times and you will properly too.</p>
+									<p>The Box Model is a useful tool to remember for CSS, especially when differentiating between margin and padding. However, these properties can go far beyond the Box Model, and with the correct knowledge, they will be beneficial in advanced coding. Both properties are practically essential in websites, allowing for a clean, modern look that demonstrates professionality and expertise. </p>
 
 									<p class="author-fix"></p>
 
-									<p>Difficulty: Beginner<br>May 22nd, 2017</p>
+									<p>Difficulty: Beginner<br>May 29th, 2017</p>
 									<a href="../authors/b_miller_bio.html">Author: Brett Miller</a><br>
 									<a href="../authors/k_gash_bio.html">Editor: Kellan Gash</a><br>
 									<a href="../authors/luke_bio.html">Creative Director: Luke Holsinger</a>
